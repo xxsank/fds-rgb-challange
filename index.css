@@ -1,0 +1,16 @@
+.box{
+  /* display: inline-block; */
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.modal{
+  display: none;
+}
+
+.modal.show{
+  display: block;
+}
