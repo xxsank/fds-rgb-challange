@@ -32,17 +32,18 @@ boxes.forEach((el,index) => {
       document.querySelector('.modal.right').classList.add('show');
       score++;
     } else{
+      document.querySelector('.modal.right').classList.add('show');
       score = 0;
     }
     document.querySelector('.score').textContent = `score : ${score}`;    
   });
 });
 
-document.querySelector('.modal.right.close').addEventListener('click', () => {
+document.querySelector('.modal.right .close').addEventListener('click', () => {
   newStage();  
   boxes.forEach(el => {
-      el.classList.remove('large');
-    })
+    el.classList.remove('large');
+  })
   document.querySelector('.modal.right').classList.remove('show');
   
 })
