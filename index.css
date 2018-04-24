@@ -5,10 +5,17 @@
   border: 1px solid;
   margin: 2px;
   cursor: pointer;
+  transition: transform 1s;
 }
 
+.box.large{
+  transform: scale(50);
+}
 .modal{
   display: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
 }
 
 .modal.show{
