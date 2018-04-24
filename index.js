@@ -33,6 +33,7 @@ boxes.forEach((el,index) => {
       score++;
     } else{
       document.querySelector('.modal.wrong').classList.add('show');
+      document.querySelector('.inscore').textContent = `score : ${score}`;
       score = 0;
     }
     document.querySelector('.score').textContent = `score : ${score}`;    
